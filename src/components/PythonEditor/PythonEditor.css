@@ -1,0 +1,33 @@
+.python-editor {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+}
+
+.python-editor textarea {
+  width: 100%;
+  font-family: monospace;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.python-editor .instructions {
+  margin-bottom: 10px;
+}
+
+.python-editor .output {
+  margin-top: 10px;
+  background: #222;
+  color: #0f0;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 50px;
+  overflow-x: auto;
+}
+
+.python-editor .feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}

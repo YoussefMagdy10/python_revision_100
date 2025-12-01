@@ -1,0 +1,77 @@
+.tf-container {
+  max-width: 700px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.tf-question {
+  border: 2px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.tf-question.correct {
+  border-color: #49d249;
+  background: #e8ffe8;
+}
+
+.tf-question.wrong {
+  border-color: #ff4d4d;
+  background: #ffe7e7;
+}
+
+.tf-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tf-options {
+  margin-bottom: 10px;
+}
+
+.tf-options label {
+  margin-right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.tf-correction {
+  width: 90%;
+  min-height: 80px;
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  font-size: 18px;
+  background: #4a7cff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.retry-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #ff5959;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tf-feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}

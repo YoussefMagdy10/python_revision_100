@@ -1,0 +1,61 @@
+.word-bank {
+  text-align: center;
+  border: 2px solid #cacaca;
+  width: 80%;
+  margin: auto;
+  font-size: clamp(14px, 4vw, 20px);
+}
+.draggable-word {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #ddd;
+  cursor: grab;
+  font-size: clamp(14px, 4vw, 20px);
+}
+.drop-zone {
+  display: inline-block;
+  min-width: 50px;
+  padding: 5px;
+  margin: 0 3px;
+  border-bottom: 2px solid black;
+  text-align: center;
+  font-size: clamp(14px, 4vw, 20px);
+}
+.correct {
+  background-color: #d4edda;
+}
+.wrong {
+  background-color: #f8d7da;
+}
+.feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: right;
+}
+.paragraph {
+  text-align: right;
+  font-size: clamp(24px, 5vw, 32px);
+}
+.btn {
+  padding: 12px 20px;
+  font-size: clamp(14px, 3.5vw, 18px);
+  background-color: #4a90e2;   /* Nice blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #3a78c2;   /* Slightly darker on hover */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;        /* center vertically (optional) */
+  gap: 12px;                  /* spacing between buttons */
+  margin-top: 16px;           /* optional spacing */
+}
