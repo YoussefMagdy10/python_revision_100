@@ -1,5 +1,6 @@
 {
   "type": "truefalse",
+  "explanation": "اختار صح أو خطأ، ولو خطأ اكتب الصح في المستطيل اللي هايظهرلك",
   "questions": [
     {
       "text": "print \"Hello\"",

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./DragFill.css";
 
-const DragFill = ({ paragraphTemplate, words, feedbackCorrect, feedbackWrong }) => {
+const DragFill = ({ explanation="", paragraphTemplate, words, feedbackCorrect, feedbackWrong }) => {
   // State: save dropped answers in their paragraph positions
   const [userAnswers, setUserAnswers] = useState(
     Array(paragraphTemplate.length).fill("")
@@ -49,6 +49,7 @@ const DragFill = ({ paragraphTemplate, words, feedbackCorrect, feedbackWrong }) 
 
   return (
     <div className="dragfill-container">
+      <p className="title">{explanation}</p>
 
       {/* Word bank */}
       <div className="word-bank">

@@ -9,7 +9,7 @@ import "./TrueFalseCorrect.css";
   ]
 */
 
-const TrueFalseCorrect = ({ questions }) => {
+const TrueFalseCorrect = ({ explanation, questions }) => {
   // answers: array of { selected: null | "true" | "false", correction: string }
   const [answers, setAnswers] = useState(
     questions.map(() => ({ selected: null, correction: "" }))
@@ -83,6 +83,7 @@ const TrueFalseCorrect = ({ questions }) => {
 
   return (
     <div className="tf-container">
+      <p className="title">{explanation}</p>
       {questions.map((q, idx) => {
         const a = answers[idx];
         const wasSubmitted = submitted;

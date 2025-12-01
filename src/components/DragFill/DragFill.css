@@ -1,11 +1,15 @@
 .dragfill-container {
   border: 3px solid #777777;
   background-color: #fff7d6;
-  margin: 3% auto;
   padding: 3%;
   border-radius: 10px;
+  margin: 3% auto;
   width: 90%;
 }
+/* p {
+  font-size: clamp(14px, 5vw, 23px);
+  font-weight: bold;
+} */
 .word-bank {
   background-color: #ffeeab;
   text-align: center;

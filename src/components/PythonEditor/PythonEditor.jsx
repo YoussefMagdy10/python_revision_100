@@ -19,7 +19,7 @@ const loadSkulpt = () => {
   });
 };
 
-const PythonEditor = ({ instructions, starterCode, expectedResult }) => {
+const PythonEditor = ({ explanation="", instructions, starterCode, expectedResult }) => {
   const [output, setOutput] = useState("");
   const [feedback, setFeedback] = useState("");
   const [code, setCode] = useState(starterCode || "");
@@ -107,6 +107,7 @@ const runPython = async () => {
         ""
       }`}
     >
+      <p className="title">{explanation}</p>
       <div
         className="instructions"
         dangerouslySetInnerHTML={{ __html: instructions }}

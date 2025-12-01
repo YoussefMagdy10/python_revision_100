@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./MCQ.css";
 
-const MCQ = ({ question, choices, correctIndex, feedbackCorrect, feedbackWrong }) => {
+const MCQ = ({ explanation="", question, choices, correctIndex, feedbackCorrect, feedbackWrong }) => {
   const [selected, setSelected] = useState(null);
   const [checked, setChecked] = useState(false);
 
@@ -13,6 +13,7 @@ const MCQ = ({ question, choices, correctIndex, feedbackCorrect, feedbackWrong }
 
   return (
     <div className="mcq-container">
+      <p className="title">{explanation}</p>
       <p className="question">{question}</p>
 
       <ul className="choices">

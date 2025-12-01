@@ -4,6 +4,7 @@ import MultipleMCQ from "./components/MultipleMCQ/MultipleMCQ";
 import PythonEditor from "./components/PythonEditor/PythonEditor";
 import TrueFalseCorrect from "./components/TrueFalseCorrect/TrueFalseCorrect";
 import Matcher from "./components/Matcher/Matcher";
+import Text from "./components/Text/Text";
 
 export default function QuestionRenderer({ data }) {
   switch (data.type) {
@@ -19,6 +20,8 @@ export default function QuestionRenderer({ data }) {
       return <TrueFalseCorrect {...data} />;
     case "matcher":
       return <Matcher {...data} />;
+    case "text":
+      return <Text {...data} />;
     default:
       return <div>❌ Unknown question type: {data.type}</div>;
   }

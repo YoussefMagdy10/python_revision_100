@@ -4,6 +4,13 @@
   padding: 2rem;
   text-align: center;
 }
+.title {
+  font-size: clamp(20px, 6vw, 25px);
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
 
 /* .logo {
   height: 6em;

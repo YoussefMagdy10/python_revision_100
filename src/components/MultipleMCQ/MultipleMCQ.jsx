@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./MultipleMCQ.css";
 
-const MultipleMCQ = ({ question, choices, maxTrials = 3 }) => {
+const MultipleMCQ = ({ explanation="", question, choices, maxTrials = 3 }) => {
   const [selected, setSelected] = useState([]);
   const [trials, setTrials] = useState(0);
   const [feedback, setFeedback] = useState("");
@@ -47,6 +47,7 @@ const MultipleMCQ = ({ question, choices, maxTrials = 3 }) => {
 
   return (
     <div className="multiple-mcq-container">
+      <p className="title">{explanation}</p>
       <div className="multiple-mcq-question">{question}</div>
 
       <div className="multiple-mcq-choices">
