@@ -100,14 +100,20 @@ const runPython = async () => {
   };
 
   return (
-    <div className="python-editor">
+    <div
+      className={`python-editor ${
+        feedback === "✅ Correct!" ? "correct" :
+        feedback.startsWith("❌") ? "incorrect" :
+        ""
+      }`}
+    >
       <div
         className="instructions"
         dangerouslySetInnerHTML={{ __html: instructions }}
       />
-      <button onClick={addTab} className="tab-button">
-        Tab
-      </button>
+
+      <button onClick={addTab} className="tab-button">Tab</button>
+
       <textarea
         ref={textareaRef}
         value={code}
@@ -117,7 +123,9 @@ const runPython = async () => {
         cols={60}
       />
       <br />
+
       <button onClick={runPython}>Run</button>
+
       <pre className="output">{output}</pre>
       <div className="feedback">{feedback}</div>
     </div>

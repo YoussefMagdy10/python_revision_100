@@ -3,7 +3,15 @@
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 8px;
-  background-color: #fdfdfd;
+  background-color: #b2cdff;
+}
+
+.python-editor.correct {
+  background-color: #8dff8d; /* green */
+}
+
+.python-editor.incorrect {
+  background-color: #ff8d8d; /* red */
 }
 
 .python-editor textarea {
@@ -11,6 +19,7 @@
   font-family: monospace;
   font-size: 14px;
   margin-top: 10px;
+  background-color: #fff1b2;
 }
 
 .python-editor .instructions {
@@ -30,4 +39,11 @@
 .python-editor .feedback {
   margin-top: 10px;
   font-weight: bold;
+}
+
+.correct {
+  background-color: #36ff65;
+}
+.wrong {
+  background-color: #ff8c96;
 }

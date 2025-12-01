@@ -10,10 +10,10 @@
   font-size: clamp(24px, 5vw, 32px);
 }
 .correct {
-  background-color: #d4edda;
+  background-color: #36ff65;
 }
 .wrong {
-  background-color: #f8d7da;
+  background-color: #ff8c96;
 }
 .feedback {
   margin-top: 10px;
