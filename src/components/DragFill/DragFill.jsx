@@ -90,8 +90,8 @@ const DragFill = ({ paragraphTemplate, words, feedbackCorrect, feedbackWrong }) 
 
       {/* Buttons */}
       <div className="buttons">
-        <button className="btn" onClick={handleCheck}>Check</button>
-        <button className="btn" onClick={handleRetry}>Retry</button>
+        <button className="dragbtn" onClick={handleCheck}>Check</button>
+        <button className="dragbtn" onClick={handleRetry}>Retry</button>
       </div>
 
       {/* Feedback */}

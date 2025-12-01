@@ -2,10 +2,17 @@
   max-width: 700px;
   margin: auto;
   font-family: sans-serif;
+  border-radius: 10px;
+  font-size: clamp(24px, 5vw, 32px);
+  border: 3px solid #777777;
+  background-color: #e9d4fc;
+  margin: 3%;
+  padding: 3%;
 }
 
 .tf-question {
-  border: 2px solid #ddd;
+  border: 2px solid #666666;
+  background-color: #dbb5ff;
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -48,16 +55,23 @@
   border-radius: 5px;
 }
 
-.submit-btn {
+.truefalsebtn {
   display: block;
   margin: 20px auto;
   padding: 10px 30px;
   font-size: 18px;
-  background: #4a7cff;
-  color: white;
-  border: none;
+  background-color: #bb73ff;
+  color: black;
+  border: 1px solid #666666;
   border-radius: 6px;
   cursor: pointer;
+}
+.truefalsebtn:hover {
+  background-color: #8451b4;
+  color: white
+}
+.truefalsebtn:active {
+  background-color: #553574;
 }
 
 .retry-btn {

@@ -1,0 +1,20 @@
+{
+  "type": "truefalse",
+  "questions": [
+    {
+      "text": "print \"Hello\"",
+      "isTrue": false,
+      "correctAnswer": "print(\"Hello\")"
+    },
+    {
+      "text": "x = 5",
+      "isTrue": true,
+      "correctAnswer": ""
+    },
+    {
+      "text": "print(My age is, 5)",
+      "isTrue": false,
+      "correctAnswer": "print(\"My age is\", 5)"
+    }
+  ]
+}

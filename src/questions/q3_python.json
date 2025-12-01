@@ -1,0 +1,6 @@
+{
+  "type": "python",
+  "instructions": "<b>Task:</b> Write a function called <i>add</i>...",
+  "starterCode": "def add(a, b):\n    # write your code here",
+  "expectedResult": "5"
+}

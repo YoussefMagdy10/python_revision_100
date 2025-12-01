@@ -112,7 +112,7 @@ const runPython = async () => {
         dangerouslySetInnerHTML={{ __html: instructions }}
       />
 
-      <button onClick={addTab} className="tab-button">Tab</button>
+      <button onClick={addTab} className="pythonbtn tab-button">Tab</button>
 
       <textarea
         ref={textareaRef}
@@ -124,7 +124,7 @@ const runPython = async () => {
       />
       <br />
 
-      <button onClick={runPython}>Run</button>
+      <button onClick={runPython} className="pythonbtn">Run</button>
 
       <pre className="output">{output}</pre>
       <div className="feedback">{feedback}</div>

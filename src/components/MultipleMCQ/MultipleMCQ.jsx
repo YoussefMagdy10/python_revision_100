@@ -51,17 +51,17 @@ const MultipleMCQ = ({ question, choices, maxTrials = 3 }) => {
 
       <div className="multiple-mcq-choices">
         {choices.map((choice, idx) => {
-            let className = "multiple-mcq-choice";
-            if (selected.includes(idx)) className += " selected";
+          let className = "multiple-mcq-choice";
+          if (selected.includes(idx)) className += " selected";
 
-            if (showAnswer) {
+          if (showAnswer) {
             if (selected.includes(idx) && !choice.correct) {
                 className += " wrong"; // red for wrongly selected
             }
             if (choice.correct) {
                 className += " correct"; // green for correct answers
             }
-            }
+          }
 
           return (
             <div
@@ -77,9 +77,9 @@ const MultipleMCQ = ({ question, choices, maxTrials = 3 }) => {
 
 
       <div className="multiple-mcq-buttons">
-        <button className="btn" onClick={handleVerify}>Verify</button>
+        <button className="multiplemcqbtn" onClick={handleVerify}>Verify</button>
           {trials >= maxTrials && !showAnswer && (
-        <button className="btn" onClick={handleShowAnswer}>Show Answer</button>
+        <button className="multiplemcqbtn" onClick={handleShowAnswer}>Show Answer</button>
       )}
     </div>
 

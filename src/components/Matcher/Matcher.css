@@ -1,9 +1,10 @@
 .matcher-container {
   position: relative;
-  margin: 20px 0;
-  padding: 20px;
-  border: 2px solid #ccc;
   border-radius: 10px;
+  border: 3px solid #777777;
+  background-color: #d4fbfc;
+  margin: 3%;
+  padding: 3%;
 }
 
 .columns {
@@ -23,7 +24,7 @@
   border: 1px solid #999;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #f5f5f5;
+  background-color: #a2edf0;
   transition: all 0.2s;
 }
 
@@ -55,17 +56,21 @@
   margin-top: 15px;
   font-weight: bold;
 }
-.btn {
+.matcherbtn {
   padding: 10px 18px;
   border: none;
   border-radius: 6px;
-  background-color: #4a90e2;
-  color: white;
+  background-color: #00bac0;
+  color: black;
   cursor: pointer;
   font-size: clamp(14px, 3vw, 18px);
 }
-.btn:hover {
-  background-color: #3a78c2;
+.matcherbtn:hover {
+  background-color: #14777a;
+  color: #ffffff;
+}
+.matcherbtn:active {
+  background-color: #165e61;
 }
 .mcq-buttons {
   display: flex;

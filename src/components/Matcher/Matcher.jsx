@@ -132,8 +132,8 @@ const Matcher = ({ columnA, columnB, feedbackCorrect, feedbackWrong }) => {
       </svg>
 
       <div className="buttons">
-        <button className="btn" onClick={handleCheck}>Check Answer</button>
-        <button className="btn" onClick={handleReset}>Reset</button>
+        <button className="matcherbtn" onClick={handleCheck}>Check Answer</button>
+        <button className="matcherbtn" onClick={handleReset}>Reset</button>
       </div>
 
       {resultFeedback && <div className="feedback">{resultFeedback}</div>}

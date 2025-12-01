@@ -2,6 +2,11 @@
   margin-bottom: 20px;
   text-align: right;
   font-size: clamp(24px, 5vw, 32px);
+  border: 3px solid #777777;
+  background-color: #d5fcd4;
+  margin: 3%;
+  padding: 3%;
+  border-radius: 10px;
 }
 .choices li {
   list-style: none;
@@ -19,17 +24,23 @@
   margin-top: 10px;
   font-weight: bold;
 }
-.btn {
+.mcqbtn {
   padding: 10px 18px;
   border: none;
   border-radius: 6px;
-  background-color: #4a90e2;
-  color: white;
+  background-color: #70ff6d;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   font-size: clamp(14px, 3vw, 18px);
+  border: 1px solid #6b6d00;
+  transition: background-color 0.2s ease;
 }
-.btn:hover {
-  background-color: #3a78c2;
+.mcqbtn:hover {
+  background-color: #37ad35;
+  color: #ffffff;
+}
+.mcqbtn:active {
+  background-color: #027700;
 }
 .mcq-buttons {
   display: flex;

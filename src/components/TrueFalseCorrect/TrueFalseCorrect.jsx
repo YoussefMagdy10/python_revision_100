@@ -137,7 +137,7 @@ const TrueFalseCorrect = ({ questions }) => {
 
             {/* Show Retry button only if submitted and this question is incorrect */}
             {wasSubmitted && !correct && (
-              <button className="retry-btn" onClick={() => handleRetry(idx)}>
+              <button className="retry-btn truefalsebtn" onClick={() => handleRetry(idx)}>
                 Retry
               </button>
             )}
@@ -155,17 +155,17 @@ const TrueFalseCorrect = ({ questions }) => {
       {/* If not submitted, show the Submit All button. If submitted but there are still wrong unlocked questions,
           you may want to allow re-submit; keep Submit All visible so user can check again after retries. */}
       <div style={{ textAlign: "center", marginTop: 12 }}>
-        <button className="submit-btn" onClick={handleSubmitAll}>
+        <button className="submit-btn truefalsebtn" onClick={handleSubmitAll}>
           Submit All
         </button>
 
-        {hasIncorrect && !showAnswer && (
+        {/* {hasIncorrect && !showAnswer && (
           <div style={{ marginTop: 10 }}>
-            <button className="show-answer-btn" onClick={handleShowAnswer}>
+            <button className="show-answer-btn truefalsebtn" onClick={handleShowAnswer}>
               Show Correct Answer
             </button>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

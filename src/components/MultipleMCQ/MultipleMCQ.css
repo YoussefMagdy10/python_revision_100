@@ -4,17 +4,18 @@ h2 {
 
 .multiple-mcq-container {
   max-width: 600px;
-  margin: 20px auto;
   padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background: #fdfdfd;
   font-family: sans-serif;
+  border-radius: 10px;
+  font-size: clamp(15px, 4vw, 20px);
+  border: 3px solid #777777;
+  background-color: #fcd4fc;
+  margin: 3%;
+  padding: 3%;
 }
 
 .multiple-mcq-question {
   margin-bottom: 12px;
-  font-size: clamp(14px, 3vw, 20px);
   text-align: right;
 }
 
@@ -27,14 +28,19 @@ h2 {
   padding: 8px 12px;
   margin: 6px 0;
   border-radius: 6px;
-  border: 1px solid #aaa;
+  border: 2px solid #5c5b5b;
   cursor: pointer;
   user-select: none;
+  background-color: #ffafff;
   transition: background-color 0.2s;
 }
-
+.multiple-mcq-choice:hover {
+  background-color: #946594;
+  color: white;
+}
 .multiple-mcq-choice.selected {
   background-color: #e0e0e0;
+  color: black;
 }
 
 .multiple-mcq-choice.correct {
@@ -53,18 +59,23 @@ h2 {
   margin-top: 12px;
 }
 
-.btn {
-  padding: 10px 18px;
-  border: none;
+.multiplemcqbtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 30px;
+  font-size: 18px;
+  background-color: #ff73e1;
+  color: black;
+  border: 1px solid #666666;
   border-radius: 6px;
-  background-color: #4a90e2;
-  color: white;
   cursor: pointer;
-  font-size: clamp(14px, 3vw, 18px);
 }
-
-.btn:hover {
-  background-color: #3a78c2;
+.multiplemcqbtn:hover {
+  background-color: #b451b4;
+  color: white
+}
+.multiplemcqbtn:active {
+  background-color: #723574;
 }
 
 .feedback {

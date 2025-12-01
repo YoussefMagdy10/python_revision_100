@@ -1,9 +1,11 @@
 .python-editor {
   margin: 20px 0;
-  border: 1px solid #ccc;
+  border: 3px solid #777777;
   padding: 15px;
-  border-radius: 8px;
-  background-color: #b2cdff;
+  border-radius: 10px;
+  background-color: #b9c4ff;
+  margin: 3%;
+  padding: 3%;
 }
 
 .python-editor.correct {
@@ -15,11 +17,11 @@
 }
 
 .python-editor textarea {
+  margin: 2% auto;
   width: 100%;
   font-family: monospace;
   font-size: 14px;
-  margin-top: 10px;
-  background-color: #fff1b2;
+  background-color: #c5cce6;
 }
 
 .python-editor .instructions {
@@ -27,13 +29,14 @@
 }
 
 .python-editor .output {
-  margin-top: 10px;
+  margin: 3%;
   background: #222;
   color: #0f0;
   padding: 10px;
   border-radius: 5px;
   min-height: 50px;
   overflow-x: auto;
+  
 }
 
 .python-editor .feedback {
@@ -46,4 +49,22 @@
 }
 .wrong {
   background-color: #ff8c96;
+}
+
+.pythonbtn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6a80ff;
+  color: black;
+  cursor: pointer;
+  font-size: clamp(14px, 3vw, 18px);
+  border: solid 1px rgb(59, 56, 56);
+}
+.pythonbtn:hover {
+  background-color: #3d4fb8;
+  color: white;
+}
+.pythonbtn:active {
+  background-color: #283374;
 }

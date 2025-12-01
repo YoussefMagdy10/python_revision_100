@@ -1,0 +1,27 @@
+{
+  "type": "multiplemcq",
+  "question": "Which of the following statements about Python lists are TRUE?",
+  "choices": [
+    {
+      "text": "Lists are immutable",
+      "correct": false
+    },
+    {
+      "text": "Lists can contain mixed data types",
+      "correct": true
+    },
+    {
+      "text": "Lists preserve insertion order",
+      "correct": true
+    },
+    {
+      "text": "List indexing starts at 1",
+      "correct": false
+    },
+    {
+      "text": "Lists are dynamic (can grow/shrink)",
+      "correct": true
+    }
+  ],
+  "maxTrials": "3"
+}

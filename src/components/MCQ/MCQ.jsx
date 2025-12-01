@@ -41,10 +41,10 @@ const MCQ = ({ question, choices, correctIndex, feedbackCorrect, feedbackWrong }
       </ul>
       
       <div className="mcq-buttons">
-        <button className="btn" onClick={handleCheck} disabled={selected === null || checked}>
+        <button className="mcqbtn" onClick={handleCheck} disabled={selected === null || checked}>
           Check Answer
         </button>
-        <button className="btn" onClick={handleRetry}>Retry</button>
+        <button className="mcqbtn" onClick={handleRetry}>Retry</button>
       </div>
 
       {checked && (

@@ -1,15 +1,24 @@
+.dragfill-container {
+  border: 3px solid #777777;
+  background-color: #fff7d6;
+  margin: 3%;
+  padding: 3%;
+  border-radius: 10px;
+}
 .word-bank {
+  background-color: #ffeeab;
   text-align: center;
-  border: 2px solid #cacaca;
+  border: 2px solid #8d7f42;
   width: 80%;
-  margin: auto;
+  margin: 10px auto;
   font-size: clamp(14px, 4vw, 20px);
 }
 .draggable-word {
   display: inline-block;
   padding: 5px 10px;
   margin: 5px;
-  background-color: #ddd;
+  background-color: #ffe46b;
+  border: 2px solid #cacaca;
   cursor: grab;
   font-size: clamp(14px, 4vw, 20px);
 }
@@ -23,10 +32,10 @@
   font-size: clamp(14px, 4vw, 20px);
 }
 .correct {
-  background-color: #d4edda;
+  background-color: #8fffa9;
 }
 .wrong {
-  background-color: #f8d7da;
+  background-color: #ff8690;
 }
 .feedback {
   margin-top: 10px;
@@ -36,20 +45,26 @@
 .paragraph {
   text-align: right;
   font-size: clamp(24px, 5vw, 32px);
+  margin: auto;
 }
-.btn {
+.dragbtn {
   padding: 12px 20px;
   font-size: clamp(14px, 3.5vw, 18px);
-  background-color: #4a90e2;   /* Nice blue */
-  color: white;
-  border: none;
+  background-color: #fbff00;   /* Nice yellow */
+  color: rgb(0, 0, 0);
+  border: 1px solid #6b6d00;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
-.btn:hover {
-  background-color: #3a78c2;   /* Slightly darker on hover */
+.dragbtn:hover {
+  background-color: #b5b800;   /* Slightly darker on hover */
+  color:#ffffff
+}
+
+.dragbtn:active {
+  background-color: #6b6d00;
 }
 
 .buttons {
@@ -58,4 +73,5 @@
   align-items: center;        /* center vertically (optional) */
   gap: 12px;                  /* spacing between buttons */
   margin-top: 16px;           /* optional spacing */
+  margin-bottom: 16px;
 }
