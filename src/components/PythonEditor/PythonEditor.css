@@ -39,7 +39,7 @@
   border-radius: 5px;
   min-height: 50px;
   overflow-x: auto;
-  
+  text-align: left;
 }
 
 .python-editor .feedback {

@@ -80,7 +80,7 @@ const TrueFalseCorrect = ({ explanation, questions }) => {
   };
 
   const hasIncorrect = submitted && answers.some((a, i) => !locked[i]);
-
+  const uid = React.useId();
   return (
     <div className="tf-container">
       <p className="title">{explanation}</p>
@@ -89,11 +89,6 @@ const TrueFalseCorrect = ({ explanation, questions }) => {
         const wasSubmitted = submitted;
         const isLocked = locked[idx];
         const correct = wasSubmitted ? isQuestionCorrectNow(q, a) : null;
-        {showAnswer && !correct && (
-          <div className="tf-correct-answer">
-            Correct Answer: {q.isTrue ? "True" : `False — ${q.correctAnswer}`}
-          </div>
-        )}
 
         return (
           <div
@@ -106,7 +101,7 @@ const TrueFalseCorrect = ({ explanation, questions }) => {
               <label>
                 <input
                   type="radio"
-                  name={`tf-${idx}`}
+                  name={`tf-${uid}-${idx}`}
                   disabled={wasSubmitted && isLocked}
                   checked={a.selected === "true"}
                   onChange={() => handleSelect(idx, "true")}
@@ -136,28 +131,34 @@ const TrueFalseCorrect = ({ explanation, questions }) => {
               />
             )}
 
-            {/* Show Retry button only if submitted and this question is incorrect */}
             {wasSubmitted && !correct && (
               <button className="retry-btn truefalsebtn" onClick={() => handleRetry(idx)}>
                 Retry
               </button>
             )}
 
-            {/* Show feedback only if submitted */}
             {wasSubmitted && (
               <div className="tf-feedback">
                 {correct ? "✔ Correct!" : "✘ Incorrect"}
               </div>
             )}
+
+            {/* 🔥 FIXED: This must be inside the returned JSX */}
+            {showAnswer && !correct && (
+              <div className="tf-correct-answer">
+                Correct Answer: {q.isTrue ? "True" : `False — ${q.correctAnswer}`}
+              </div>
+            )}
           </div>
         );
+
       })}
 
       {/* If not submitted, show the Submit All button. If submitted but there are still wrong unlocked questions,
           you may want to allow re-submit; keep Submit All visible so user can check again after retries. */}
       <div style={{ textAlign: "center", marginTop: 12 }}>
         <button className="submit-btn truefalsebtn" onClick={handleSubmitAll}>
-          Submit All
+          Submit
         </button>
 
         {/* {hasIncorrect && !showAnswer && (

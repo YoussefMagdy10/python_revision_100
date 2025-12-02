@@ -1,0 +1,7 @@
+{
+  "type": "python",
+  "explanation": "اكتب كود بايثون يحقق المطلوب",
+  "instructions": "المطلوب: اطبع الشكل اللي في الصورة",
+  "starterCode": "",
+  "expectedResult": "#####\\n#\\n####\\n#\\n#####"
+}

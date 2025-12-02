@@ -1,0 +1,12 @@
+{
+  "type": "mcq",
+  "explanation": "اختار ايه اللي هايتطبع",
+  "question": "name = \"Mina\"  print(\"Mina\")",
+  "choices": [
+    "name",
+    "Mina"
+  ],
+  "correctIndex": 1,
+  "feedbackCorrect": "عااااش 🙌️🥳️",
+  "feedbackWrong": "حاول كمان مرة :("
+}

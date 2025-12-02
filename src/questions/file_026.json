@@ -1,0 +1,7 @@
+{
+  "type": "python",
+  "explanation": "اكتب كود بايثون يحقق المطلوب",
+  "instructions": "المطلوب: اكتب رقم 5 في متغير، واطبعه",
+  "starterCode": "# number = .....\\n# print(.....)",
+  "expectedResult": "5"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "mcq",
+  "explanation": "صح ولا غلط؟",
+  "question": "ال boolean data type بيأخذ القيمة True أو False بس",
+  "choices": [
+    "صح",
+    "خطأ"
+  ],
+  "correctIndex": 0,
+  "feedbackCorrect": "عااااش 🙌️🥳️",
+  "feedbackWrong": "حاول كمان مرة :("
+}

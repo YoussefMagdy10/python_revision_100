@@ -1,7 +1,0 @@
-{
-  "type": "python",
-  "explanation": "اقرأ المطلوب واكتب الكود المطلوب في المستطيل",
-  "instructions": "<b>Task:</b> Write a function called <i>add</i>...",
-  "starterCode": "def add(a, b):\n    # write your code here",
-  "expectedResult": "5"
-}

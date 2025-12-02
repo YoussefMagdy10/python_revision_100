@@ -1,0 +1,11 @@
+{
+  "type": "truefalse",
+  "explanation": "اختار صح أو خطأ، ولو خطأ هايظهرلك مستطيل اكتب فيه الصح",
+  "questions": [
+    {
+      "text": "x = 5",
+      "isTrue": true,
+      "correctAnswer": ""
+    }
+  ]
+}

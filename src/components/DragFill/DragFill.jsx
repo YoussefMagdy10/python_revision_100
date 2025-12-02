@@ -18,6 +18,16 @@ const DragFill = ({ explanation="", paragraphTemplate, words, feedbackCorrect, f
     e.dataTransfer.setData("text", word);
   };
 
+  const shuffleArray = (arr) => {
+    const copy = [...arr];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+  };
+  const [shuffledWords] = useState(shuffleArray(words));
+
   const handleDrop = (index, e) => {
     e.preventDefault();
     const word = e.dataTransfer.getData("text");
@@ -53,7 +63,7 @@ const DragFill = ({ explanation="", paragraphTemplate, words, feedbackCorrect, f
 
       {/* Word bank */}
       <div className="word-bank">
-        {words.map((w, idx) => (
+        {shuffledWords.map((w, idx) => (
           <span
             key={idx}
             className="draggable-word"

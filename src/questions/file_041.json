@@ -1,0 +1,11 @@
+{
+  "type": "truefalse",
+  "explanation": "اختار صح أو خطأ، ولو خطأ هايظهرلك مستطيل اكتب فيه الصح",
+  "questions": [
+    {
+      "text": "print(\"is_egyptian\")",
+      "isTrue": false,
+      "correctAnswer": "print(is_egyptian)"
+    }
+  ]
+}

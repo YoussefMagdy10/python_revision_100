@@ -1,0 +1,9 @@
+{
+  "type": "text",
+  "content": [
+    {
+      "sentence": "is_egyptian = True",
+      "font": "bold"
+    }
+  ]
+}

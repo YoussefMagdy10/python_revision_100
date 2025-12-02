@@ -1,0 +1,11 @@
+{
+  "type": "truefalse",
+  "explanation": "اختار صح أو خطأ، ولو خطأ هايظهرلك مستطيل اكتب فيه الصح",
+  "questions": [
+    {
+      "text": "print(My age is 5)", 
+      "isTrue": false,
+      "correctAnswer": "print(\"My age is 5\")"
+    }
+  ]
+}

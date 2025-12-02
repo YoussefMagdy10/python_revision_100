@@ -1,0 +1,12 @@
+{
+  "type": "mcq",
+  "explanation": "صح ولا غلط؟",
+  "question": "ال 1 Byte عبارة عن 10 bits.",
+  "choices": [
+    "صح",
+    "خطأ"
+  ],
+  "correctIndex": 1,
+  "feedbackCorrect": "عااااش 🙌️🥳️",
+  "feedbackWrong": "حاول كمان مرة :("
+}

@@ -42,33 +42,33 @@ import './App.css'
 //     ],
 //   };  
 // // Mol7ak 3
-//   const questions = [
-//     {
-//       text: "print \"Hello\"",     // Wrong Python 3 syntax
-//       isTrue: false,
-//       correctAnswer: "print(\"Hello\")"
-//     },
-//     {
-//       text: "x = 5",             // Correct syntax
-//       isTrue: true,
-//       correctAnswer: ""          // Not required for true questions
-//     },
-//     {
-//       text: "name = \"Mariam\"",
-//       isTrue: true,
-//       correctAnswer: ""
-//     },
-//     {
-//       text: "print(My age is, 5)",
-//       isTrue: false,
-//       correctAnswer: "print(\"My age is\", 5)"
-//     },
-//     {
-//       text: "لو عايزين نطبع كلمة True، هانكتب:\nis_egyptian = True\nprint(\"is_egyptian\")",
-//       isTrue: false,
-//       correctAnswer: "print(is_egyptian)"
-//     }
-//   ];
+  // const questions = [
+  //   {
+  //     text: "print \"Hello\"",     // Wrong Python 3 syntax
+  //     isTrue: false,
+  //     correctAnswer: "print(\"Hello\")"
+  //   },
+  //   {
+  //     text: "x = 5",             // Correct syntax
+  //     isTrue: true,
+  //     correctAnswer: ""          // Not required for true questions
+  //   },
+  //   {
+  //     text: "name = \"Mariam\"",
+  //     isTrue: true,
+  //     correctAnswer: ""
+  //   },
+  //   {
+  //     text: "print(My age is, 5)",
+  //     isTrue: false,
+  //     correctAnswer: "print(\"My age is\", 5)"
+  //   },
+  //   {
+  //     text: "لو عايزين نطبع كلمة True، هانكتب:\nis_egyptian = True\nprint(\"is_egyptian\")",
+  //     isTrue: false,
+  //     correctAnswer: "print(is_egyptian)"
+  //   }
+  // ];
 
 //   console.log("Working in App.jsx");
 

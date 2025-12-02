@@ -22,7 +22,11 @@ const loadSkulpt = () => {
 const PythonEditor = ({ explanation="", instructions, starterCode, expectedResult }) => {
   const [output, setOutput] = useState("");
   const [feedback, setFeedback] = useState("");
-  const [code, setCode] = useState(starterCode || "");
+  const [code, setCode] = useState(
+    starterCode ? starterCode.replace(/\\n/g, "\n") : ""
+  );
+  expectedResult = expectedResult.replace(/\\n/g, "\n");
+  console.log("Expected Result ==> \n" , expectedResult);
   const textareaRef = useRef(null);
 
   const builtinRead = (x) => {
