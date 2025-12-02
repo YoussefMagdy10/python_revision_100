@@ -1,0 +1,12 @@
+{
+  "type": "mcq",
+  "explanation": "صح ولا غلط؟",
+  "question": "ال 1MB عبارة عن مليون Byte",
+  "choices": [
+    "صح",
+    "خطأ"
+  ],
+  "correctIndex": 0,
+  "feedbackCorrect": "عااااش 🙌️🥳️",
+  "feedbackWrong": "حاول كمان مرة :("
+}
